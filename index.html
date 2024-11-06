@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bonafide Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generate Your Bonafide Certificate</h1>
+
+    <form id="bonafideForm" action="save_bonafide.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="institution">Institution Name:</label>
+      <input type="text" id="institution" name="institution" required>
+
+      <label for="purpose">Purpose:</label>
+      <input type="text" id="purpose" name="purpose" required>
+
+      <label for="template">Select Template:</label>
+      <select id="template" name="template">
+        <option value="template1">Template 1</option>
+        <option value="template2">Template 2</option>
+        <option value="template3">Template 3</option>
+      </select>
+
+      <button type="submit">Generate Bonafide</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
